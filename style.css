@@ -1,2 +1,8 @@
 body {
-    background-color:#674F2D
+    background-color:#674F2D;
+}
+.head{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
