@@ -6,17 +6,48 @@ body {
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
 }
-.audio-container {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #ffffff;
-    margin: 20px auto;
-    max-width: 400px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+/* Container for the buttons to sit side-by-side */
+.audio-controls {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-audio {
-    width: 100%;
-    margin-top: 10px;
+/* Base button styling */
+.control-btn {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 20px; /* Gives them a pills/capsule shape */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Specific styling for the Play button */
+#playBtn {
+    background-color: #0071e3; /* Apple Blue */
+    color: white;
+}
+
+#playBtn:hover {
+    background-color: #0077ed;
+}
+
+/* Specific styling for the Mute button */
+#muteBtn {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+#muteBtn:hover {
+    background-color: #e8e8ed;
+}
+
+/* Visual change when the track is muted */
+#muteBtn.muted-active {
+    background-color: #ff3b30; /* Pastel Red warning */
+    color: white;
 }
